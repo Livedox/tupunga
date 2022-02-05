@@ -192,6 +192,7 @@ body.dark .header__moon{
 
 .setting__select{
     background-color: #2980b9;
+    color: #f9fcfd;
     border: none;
     padding: 0.3rem;
     border-radius: 2px;

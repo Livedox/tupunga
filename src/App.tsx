@@ -9,6 +9,7 @@ import Part, { Breeder, PlantEater, Speed } from "./Part";
 import Setting from "./components/Setting";
 import StartScreen from "./components/StartScreen";
 import Footer from "./components/Footer";
+import Helmet from "react-helmet";
 
 function App() {
     const [settingActive, setSettingActive] = useState(true);
@@ -131,6 +132,10 @@ function App() {
         }
     }
     return (
+        <>
+        <Helmet>
+            <title>Tupunga</title>
+        </Helmet>
         <div className="App">
             <StartScreen />
             <Setting setSettingActive={setSettingActive} />
@@ -168,6 +173,7 @@ function App() {
                 <Footer />
             </div>
         </div>
+        </>
     );
 }
 
